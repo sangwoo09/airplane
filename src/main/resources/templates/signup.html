@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+    <title>飛行機　signup</title>
+  <style>
+    body {
+      background-color: dimgray;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .layout{
+      background-color:#ffffff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .id_check {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <form action="/signup" method="post" class="container">
+    <div class="id_check">
+      <input type="text" name="id" class="form-control" placeholder="id" style="width: 70%" required>
+      <a class="btn btn-secondary btn-sm" onclick="window.open('idcheck','ID チェック', 'width=450,height=300')" style="width: 30%">重複検査</a><br>
+    </div>
+    <br>
+      <input type="password" class="form-control" name="password1" placeholder="Password1" required>
+    <br>
+      <input type="password" class="form-control" name="password2" placeholder="Password2" required>
+    <br>
+      <input type="text" class="form-control" name="name" placeholder="Name" required>
+    <br>
+      <input type="text" class="form-control" name="address" placeholder="Address" required>
+    <br>
+    <div class="id_check">
+      <input type="email" class="form-control" name="email" placeholder="Email" style="width: 70%" required>
+      <a class="btn btn-secondary btn-sm" onclick="window.open('emailcheck','Email チェック', 'width=450,height=300')" style="width: 30%">重複検査</a><br>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-warning">SignUp</button>
+    <a href="/login" class="btn btn-success">Back</a>
+    <span th:text="${msg}"></span>
+  </form>
+</div>
+</body>
+</html>
