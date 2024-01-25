@@ -3,10 +3,10 @@
 </p>
 <p align='center'>
   <a href="https://github.com/kyechan99/capsule-render/labels/Idea">
-    <img src="https://img.shields.io/badge/Spring%20-%23F7DF1E.svg?&style=for-the-badge&&logoColor=white"/>
+    <img src="https://img.shields.io/badge/SpringBoot%20-%23F7DF1E.svg?&style=for-the-badge&&logoColor=white"/>
   </a>
   <a href="#demo">
-    <img src="https://img.shields.io/badge/DEMO%20-%234FC08D.svg?&style=for-the-badge&&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Thymeleaf%20-%234FC08D.svg?&style=for-the-badge&&logoColor=white"/>
   </a>
   <a href="https://capsule-render.vercel.app/">
     <img src="https://img.shields.io/badge/Generator%20-%235c86fa.svg?&style=for-the-badge&&logoColor=white"/>
